@@ -18,12 +18,9 @@
         },
         "runtimeStack": {
             "type": "string",
-            "defaultValue": "dotnet",
-            "allowedValues": [
-                "dotnet"
-            ],
+            "defaultValue": "powershell",
             "metadata": {
-                "description": "Pick the language runtime that you want enabled"
+                "description": "Pick the language runtime that you want enabled. It should match the function app source code"
             }
         },
         "GitHubRepoUrl": {
@@ -159,7 +156,8 @@
             "name": "[parameters('functionAppName')]",
             "apiVersion": "2020-01-01-preview",
             "dependsOn": [
-                "[resourceId('Microsoft.Web/sites/', parameters('functionAppName'))]"
+                "[resourceId('Microsoft.Web/sites/', parameters('functionAppName'))]",
+                "[resourceId('Microsoft.Web/Sites/sourcecontrols', parameters('functionAppName'), 'web')]"
             ],
             "properties": {
                 "destination": {
