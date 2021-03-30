@@ -1,9 +1,9 @@
 {
   "$schema": "https://aka.ms/azure-quickstart-templates-metadata-schema#",
   "type": "QuickStart",
-    "itemDisplayName": "Creates a function app and an Event Grid subscription.",
-    "description": "Creates a function app and sets up an Event Grid subscription to call the function when a VM write happens in Azure.",
-    "summary": "Creates a function app and an Event Grid subscription.",
+    "itemDisplayName": "Creates an Event Grid topic to an existing function.",
+    "description": "Creates an Event Grid topic and a subscription to an existing Azure function",
+    "summary": "Creates an Event Grid topic and a subscription to an existing Azure function.",
     "githubUsername": "eamonoreilly",
     "dateUpdated": "2021-03-31"
   }

@@ -13,14 +13,13 @@
 [![Deploy To Azure US Gov](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazuregov.svg?sanitize=true)]("https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-functions-eventgrid%2Fazuredeploy.json")
 [![Visualize](https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.svg?sanitize=true)]("http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2Fazure-quickstart-templates%2Fmaster%2F101-functions-eventgrid%2Fazuredeploy.json")
 
-This template creates a function app and sets up an Event Grid subscription to call the function when a VM write happens in Azure.
+Creates an Event Grid topic and a subscription to an existing Azure function.
 
 ## Tasks performed by this template
 
 This template performs the following tasks
 
-* Creates a storage account to store the functions code.
-* Creates an application insights resource to store logs and metrics for the function.
-* Creates a functions application with with an Event Grid subscription running on a consumption plan.
+* Creates an Event Grid custom topic
+* Creates an Event Grid subscription that calls an existing Azure function Event Grid trigger
 
-For more information about Azure Functions, see the [Azure Functions Overview](https://azure.microsoft.com/en-us/documentation/articles/functions-overview/).
+For more information about Azure Functions with Event Grid, see the [Azure Event Grid bindings for Azure Functions](https://docs.microsoft.com/en-us/azure/azure-functions/functions-bindings-event-grid/).
