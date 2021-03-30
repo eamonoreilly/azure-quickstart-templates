@@ -26,7 +26,7 @@
     "functionAppResourceGroup": {
     "type": "string",
     "metadata": {
-        "description": "Specify the name of the function application resource group"
+        "description": "Specify the name of the resource group where the function application exists"
         }
     },
     "functionAppName": {

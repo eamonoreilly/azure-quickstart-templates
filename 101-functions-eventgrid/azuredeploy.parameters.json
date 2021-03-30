@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "functionAppResourceGroup": {
-            "value": "GET-PREREQ-functionAppResourceGroup"
+            "value": "GEN-FUNCTION-APP-RESOURCE-GROUP"
         },
         "functionAppName": {
-            "value": "GET-PREREQ-functionApp"
+            "value": "GEN-FUNCTION-APP-NAME"
         },
         "functionName": {
-            "value": "GET-PREREQ-functionName"
+            "value": "GEN-FUNCTION-NAME"
         }
     }
 }
